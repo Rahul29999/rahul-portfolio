@@ -3,42 +3,30 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Rahul Kumar Sharma — AI/ML Engineer</title>
+  <title>Rahul Kumar Sharma — AI / ML Engineer</title>
 
-  <!-- favicon (add file assets/favicon.png) -->
+  <!-- Open Graph / Twitter (improves link previews) -->
+  <meta property="og:title" content="Rahul Kumar Sharma — AI / ML Engineer" />
+  <meta property="og:description" content="AI/ML Engineer (IIT (ISM) Dhanbad) — RAG, semantic search (FAISS), LLM evaluation, time-series forecasting. See projects, experience, and resume." />
+  <meta property="og:image" content="assets/favicon.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
   <link rel="icon" href="assets/favicon.png" type="image/png">
 
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
 
-  <!-- tsparticles (background) -->
-  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.11.0/tsparticles.bundle.min.js"></script>
-
   <style>
-    :root{
-      --accent-1: #06b6d4;
-      --accent-2: #7c3aed;
-    }
+    :root{ --accent-1:#06b6d4; --accent-2:#7c3aed; }
     body{font-family:'Poppins',system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;}
-    .gradient-text{
-      background: linear-gradient(90deg,var(--accent-1),var(--accent-2));
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    .blob{position:absolute; filter: blur(80px); opacity:0.35; pointer-events:none;}
-    .scroll-indicator{width:34px;height:54px;border-radius:999px;border:2px solid rgba(0,0,0,0.12);display:flex;align-items:flex-start;justify-content:center;padding-top:6px;}
-    .dot{width:8px;height:8px;border-radius:999px;background:linear-gradient(90deg,var(--accent-1),var(--accent-2));animation:down 1.6s infinite;}
-    @keyframes down{0%{transform:translateY(0);}50%{transform:translateY(16px);}100%{transform:translateY(0);}}
+    .gradient-text{background:linear-gradient(90deg,var(--accent-1),var(--accent-2));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;}
+    .card{background:#fff;border:1px solid #e6e6f0;border-radius:14px;padding:20px;}
+    .chip{font-size:12px;padding:6px 10px;border-radius:999px;border:1px solid #e6e6f0;}
+    .blob{position:absolute;filter:blur(80px);opacity:0.32;pointer-events:none;}
   </style>
 </head>
 <body class="bg-gray-50 text-gray-900 antialiased relative overflow-x-hidden">
-
-  <!-- particles -->
-  <div id="tsparticles" class="absolute inset-0 -z-10"></div>
 
   <!-- decorative blobs -->
   <div class="blob left-[-120px] top-[-80px] w-96 h-96 bg-gradient-to-br from-cyan-200 to-indigo-200 rounded-full"></div>
@@ -46,204 +34,275 @@
 
   <!-- Header -->
   <header class="fixed w-full top-0 left-0 z-40">
-    <div class="backdrop-blur bg-white/60 border-b border-gray-200">
-      <div class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
-        <a href="#home" class="text-xl font-extrabold text-slate-800">Rahul.dev</a>
-        <nav class="hidden md:flex items-center gap-6 text-sm text-slate-700">
-          <a href="#home" class="py-2">Home</a>
-          <a href="#about" class="py-2">About</a>
-          <a href="#projects" class="py-2">Projects</a>
-          <a href="#contact" class="py-2">Contact</a>
+    <div class="backdrop-blur bg-white/70 border-b border-gray-200">
+      <div class="max-w-6xl mx-auto flex items-center justify-between px-6 py-3">
+        <a href="#home" class="text-lg font-extrabold">Rahul Kumar Sharma</a>
+        <nav class="hidden md:flex gap-6 text-sm text-gray-700">
+          <a href="#about" class="hover:text-indigo-600">About</a>
+          <a href="#projects" class="hover:text-indigo-600">Projects</a>
+          <a href="#experience" class="hover:text-indigo-600">Experience</a>
+          <a href="#skills" class="hover:text-indigo-600">Skills</a>
+          <a href="#contact" class="hover:text-indigo-600">Contact</a>
         </nav>
-
         <div class="flex items-center gap-3">
-          <button id="themeToggle" class="w-9 h-9 rounded-full border flex items-center justify-center text-slate-700">🌙</button>
-          <a href="https://github.com/Rahul29999" target="_blank" rel="noreferrer" class="hidden md:inline-block px-4 py-2 rounded-lg border">GitHub</a>
+          <a href="https://github.com/Rahul29999" target="_blank" class="hidden md:inline-block px-3 py-2 border rounded">GitHub</a>
+          <a href="https://linkedin.com/in/rahul-kumar-sharma-aa0b57233" target="_blank" class="hidden md:inline-block px-3 py-2 border rounded">LinkedIn</a>
         </div>
       </div>
     </div>
   </header>
 
-  <!-- Hero -->
+  <!-- HERO -->
   <main id="home" class="min-h-screen flex items-center">
     <div class="max-w-6xl mx-auto w-full px-6 py-28 grid md:grid-cols-2 gap-10 items-center">
       <div>
-        <p class="text-sm text-slate-500 mb-4">👋 Hello, my name is</p>
+        <p class="text-sm text-gray-500 mb-2">👋 Hi, I am</p>
         <h1 class="text-5xl md:text-6xl font-extrabold leading-tight">
-          Hey, I'm <span class="gradient-text">Rahul Kumar Sharma</span>
+          Rahul Kumar Sharma<br/>
+          <span class="gradient-text">AI / ML Engineer</span>
         </h1>
 
-        <p class="mt-6 text-lg text-slate-600 max-w-xl">
-          AI/ML Engineer | LLMs | NLP | RAG | Time-Series | Prompt Engineering.
-          I build production-ready ML systems: semantic search, RAG chatbots, time-series forecasting,
-          and LLM evaluation & prompt engineering.
+        <p class="mt-6 text-lg text-gray-700 max-w-xl">
+          AI/ML Engineer (B.Tech — IIT (ISM) Dhanbad). I build production-ready systems: semantic search (FAISS + SBERT),
+          RAG chatbots, LLM evaluation & prompt engineering, and time-series forecasting for real-world applications.
         </p>
 
-        <div class="mt-8 flex flex-wrap gap-4">
-          <a href="Rahul_Kumar_Sharma_AI_ML_Engineer_Resume.pdf.pdf" class="inline-flex items-center gap-3 px-6 py-3 rounded-full shadow-lg text-white" style="background:linear-gradient(90deg,var(--accent-1),var(--accent-2));">
+        <div class="mt-8 flex gap-3 flex-wrap">
+          <a href="Rahul_Kumar_Sharma_AI_ML_Engineer_Resume.pdf.pdf" class="inline-flex items-center gap-3 px-5 py-3 rounded-full shadow text-white" style="background:linear-gradient(90deg,var(--accent-1),var(--accent-2));">
             📄 View Resume
           </a>
-          <a href="#contact" class="px-6 py-3 rounded-full border border-slate-200">Contact Me</a>
+          <a href="#contact" class="px-5 py-3 rounded-full border">Contact</a>
         </div>
 
-        <div class="mt-8 flex gap-6 text-sm text-slate-600">
-          <div><strong>Location</strong><div>Bihar, India</div></div>
+        <div class="mt-8 flex gap-8 text-sm text-gray-600">
+          <div><strong>Location</strong><div>Bathua, Gopalganj, Bihar</div></div>
+          <div><strong>Education</strong><div>IIT (ISM) Dhanbad — B.Tech</div></div>
           <div><strong>LeetCode</strong><div>1400+</div></div>
-          <div><strong>Kaggle</strong><div>3× Bronze</div></div>
         </div>
       </div>
 
-      <div class="flex justify-center md:justify-end">
-        <div class="w-full max-w-xs bg-white rounded-3xl shadow-2xl border p-6">
+      <aside class="flex justify-center md:justify-end">
+        <div class="w-full max-w-xs card shadow-lg">
           <div class="text-center">
-            <!-- replace assets/me.jpg with your photo -->
-            <img src="assets/me.jpg" alt="Rahul Kumar Sharma" class="w-28 h-28 rounded-full mx-auto mb-4 object-cover shadow-lg"/>
+            <img src="assets/me.jpg" alt="Rahul Kumar Sharma" class="w-28 h-28 rounded-full mx-auto mb-4 object-cover shadow"/>
             <h3 class="font-semibold">Rahul Kumar Sharma</h3>
-            <p class="text-sm text-slate-500">AI / ML Engineer</p>
+            <p class="text-sm text-gray-500">AI / ML Engineer — IIT (ISM) Dhanbad</p>
           </div>
 
           <div class="mt-6 grid grid-cols-3 gap-3 text-center">
-            <div><div class="text-lg font-bold">1400+</div><div class="text-xs text-slate-500">LeetCode</div></div>
-            <div><div class="text-lg font-bold">1800</div><div class="text-xs text-slate-500">CF</div></div>
-            <div><div class="text-lg font-bold">3×</div><div class="text-xs text-slate-500">Kaggle</div></div>
+            <div><div class="text-lg font-bold">1400+</div><div class="text-xs text-gray-500">LeetCode</div></div>
+            <div><div class="text-lg font-bold">1800</div><div class="text-xs text-gray-500">Codeforces</div></div>
+            <div><div class="text-lg font-bold">3×</div><div class="text-xs text-gray-500">Kaggle</div></div>
           </div>
 
-          <div class="mt-6 text-sm text-slate-600">
+          <div class="mt-6 text-sm text-gray-700">
             <strong>Top Skills</strong>
             <div class="mt-2 flex flex-wrap gap-2">
-              <span class="text-xs px-2 py-1 border rounded-full">Python</span>
-              <span class="text-xs px-2 py-1 border rounded-full">NLP</span>
-              <span class="text-xs px-2 py-1 border rounded-full">FAISS</span>
+              <span class="chip">Python</span>
+              <span class="chip">PyTorch</span>
+              <span class="chip">TensorFlow</span>
+              <span class="chip">NLP</span>
+              <span class="chip">RAG • FAISS</span>
             </div>
           </div>
         </div>
-      </div>
-
-      <div class="col-span-2 flex justify-center mt-6">
-        <div class="scroll-indicator">
-          <div class="dot"></div>
-        </div>
-      </div>
+      </aside>
     </div>
   </main>
 
-  <!-- About -->
+  <!-- ABOUT -->
   <section id="about" class="bg-white border-t border-b border-gray-100">
-    <div class="max-w-6xl mx-auto px-6 py-20">
-      <h2 class="text-2xl font-semibold">About</h2>
-      <p class="mt-4 text-slate-700 max-w-3xl">
-        I am an AI/ML Engineer with hands-on experience in RAG systems, semantic search (FAISS + SBERT),
-        LLM evaluation & prompt engineering, and time-series forecasting. I have worked with Outlier AI and
-        contributed to IBM's Responsible Prompting API. I focus on building scalable ML pipelines and
-        multilingual NLP chatbots for real-world use.
-      </p>
-    </div>
-  </section>
+    <div class="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-3 gap-8 items-start">
+      <div class="md:col-span-2">
+        <h2 class="text-2xl font-semibold">About</h2>
+        <p class="mt-4 text-gray-700 leading-relaxed">
+          I am an AI/ML Engineer with hands-on experience building NLP pipelines, RAG systems and production-ready
+          ML services. I worked on LLM evaluation & prompt engineering, semantic retrieval (FAISS + SBERT),
+          time-series forecasting, and applied ML research for mining safety. (Detailed education & experience in resume). 
+          <!-- source: resume -->
+        </p>
 
-  <!-- Projects -->
-  <section id="projects" class="max-w-6xl mx-auto px-6 py-16">
-    <h2 class="text-2xl font-semibold">Projects</h2>
-    <div class="mt-6 grid md:grid-cols-2 gap-6">
-      <div class="p-6 border rounded-lg bg-white">
-        <h3 class="font-semibold">Bhagavad Gita Multilingual Chatbot</h3>
-        <p class="text-sm text-slate-600 mt-2">FAISS + Sentence-BERT • 700+ verses • Deployed on Hugging Face Spaces.</p>
-        <a href="https://github.com/Rahul29999" target="_blank" class="inline-block mt-3 text-indigo-600 text-sm">View Project →</a>
-      </div>
-
-      <div class="p-6 border rounded-lg bg-white">
-        <h3 class="font-semibold">Smart GenAI PDF Chatbot (RAG)</h3>
-        <p class="text-sm text-slate-600 mt-2">PDF-aware RAG pipeline with GPT fallback for document Q&A.</p>
-      </div>
-
-      <div class="p-6 border rounded-lg bg-white">
-        <h3 class="font-semibold">Longwall Periodic Weighting Prediction</h3>
-        <p class="text-sm text-slate-600 mt-2">Mining safety research — time-series analysis & early-warning insights.</p>
-      </div>
-
-      <div class="p-6 border rounded-lg bg-white">
-        <h3 class="font-semibold">NTT Stock Price Forecasting</h3>
-        <p class="text-sm text-slate-600 mt-2">Hybrid ML + LSTM — strong forecasting (R² ≈ 95%).</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Experience -->
-  <section id="experience" class="bg-white border-t border-b border-gray-100">
-    <div class="max-w-6xl mx-auto px-6 py-16">
-      <h2 class="text-2xl font-semibold">Experience</h2>
-      <div class="mt-6 space-y-6">
-        <div class="p-4 border rounded-lg bg-white">
-          <div class="flex items-start justify-between">
-            <div>
-              <div class="font-semibold">Outlier AI (USA)</div>
-              <div class="text-sm text-slate-600">Data Scientist — LLM & Prompt Engineering</div>
-            </div>
-            <div class="text-xs text-slate-500">Nov 2024 – Jun 2025</div>
+        <h3 class="mt-6 text-lg font-medium">Selected Projects</h3>
+        <div class="mt-4 grid md:grid-cols-2 gap-4">
+          <div class="card">
+            <h4 class="font-semibold">Bhagavad Gita — Multilingual Chatbot</h4>
+            <p class="text-sm text-gray-600 mt-1">
+              Built a multilingual chatbot using Sentence-BERT + FAISS over 700+ verses (Hindi/English/Sanskrit).
+              Deployed on Hugging Face Spaces with Gradio for realtime Q&A. :contentReference[oaicite:1]{index=1}
+            </p>
+            <a href="https://github.com/Rahul29999" class="text-indigo-600 text-sm mt-2 inline-block">View on GitHub →</a>
           </div>
-          <ul class="mt-3 text-sm text-slate-700 list-disc list-inside">
-            <li>Worked on RLHF-based LLM evaluation & response ranking.</li>
-            <li>Designed scalable Python evaluation pipelines using OpenAI APIs.</li>
-          </ul>
-        </div>
 
-        <div class="p-4 border rounded-lg bg-white">
-          <div class="flex items-start justify-between">
-            <div>
-              <div class="font-semibold">IBM</div>
-              <div class="text-sm text-slate-600">Open-Source Contributor — Responsible Prompting</div>
-            </div>
-            <div class="text-xs text-slate-500">Jul 2025 – Aug 2025</div>
+          <div class="card">
+            <h4 class="font-semibold">Smart GenAI PDF Chatbot (RAG)</h4>
+            <p class="text-sm text-gray-600 mt-1">
+              PDF-aware RAG pipeline using FAISS + Sentence-Transformers with GPT-3.5 fallback for low confidence answers;
+              CLI & web Q&A for education/legal workflows. :contentReference[oaicite:2]{index=2}
+            </p>
           </div>
-          <ul class="mt-3 text-sm text-slate-700 list-disc list-inside">
-            <li>Improved embedding pipeline consistency for HF models.</li>
-            <li>Fixed repo bugs and refined documentation.</li>
-          </ul>
+
+          <div class="card">
+            <h4 class="font-semibold">Longwall Periodic Weighting Prediction (Research)</h4>
+            <p class="text-sm text-gray-600 mt-1">
+              ML research to predict periodic weighing & local fall intervals from shield pressure time-series.
+              Identified 20+ periodic events and major falls (insights for early-warning systems). :contentReference[oaicite:3]{index=3}
+            </p>
+          </div>
+
+          <div class="card">
+            <h4 class="font-semibold">NTT Stock Price Forecasting</h4>
+            <p class="text-sm text-gray-600 mt-1">
+              Hybrid classical + LSTM pipeline; evaluated multiple regressors and an LSTM model achieving high R² and low RMSE. :contentReference[oaicite:4]{index=4}
+            </p>
+          </div>
         </div>
       </div>
+
+      <aside class="p-6 bg-gray-50 card">
+        <h4 class="font-medium">Education</h4>
+        <div class="mt-3 text-sm text-gray-700">
+          <div><strong>IIT (ISM) Dhanbad</strong></div>
+          <div>B.Tech — Mining Engineering (Oct 2021 – May 2025). Relevant coursework: AI, ML, Deep Learning, NLP, Data Structures.</div>
+          <div class="mt-3"><strong>Contact</strong><div class="text-xs">kumarsharmarahul01@gmail.com • +91 9508476508</div></div>
+        </div>
+
+        <h4 class="mt-6 font-medium">Tools & Libraries</h4>
+        <ul class="mt-2 text-sm text-gray-700 space-y-1">
+          <li>Scikit-learn • PyTorch • TensorFlow • Hugging Face • FAISS</li>
+          <li>Sentence-Transformers • Pandas • NumPy • Docker • Git</li>
+          <li>Gradio • Streamlit • AWS (Basic)</li>
+        </ul>
+      </aside>
     </div>
   </section>
 
-  <!-- Contact -->
+  <!-- EXPERIENCE -->
+  <section id="experience" class="max-w-6xl mx-auto px-6 py-16">
+    <h2 class="text-2xl font-semibold">Experience</h2>
+
+    <div class="mt-6 grid gap-6">
+      <div class="card">
+        <div class="flex items-start justify-between">
+          <div>
+            <div class="font-semibold">Outlier AI (USA)</div>
+            <div class="text-sm text-gray-600">Data Scientist — LLM & Prompt Engineering (Nov 2024 – Jun 2025)</div>
+          </div>
+          <div class="text-xs text-gray-500">Remote</div>
+        </div>
+        <ul class="mt-3 text-sm text-gray-700 list-disc list-inside">
+          <li>Contributed to RLHF-driven LLM training & evaluation; ranked responses and refined prompts to improve factuality.</li>
+          <li>Built scalable Python evaluation workflows using OpenAI APIs and custom metrics, improving pipeline reliability. :contentReference[oaicite:5]{index=5}</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="flex items-start justify-between">
+          <div>
+            <div class="font-semibold">IBM</div>
+            <div class="text-sm text-gray-600">Open Source Contributor — Responsible Prompting API (Jul 2025 – Aug 2025)</div>
+          </div>
+          <div class="text-xs text-gray-500">Remote</div>
+        </div>
+        <ul class="mt-3 text-sm text-gray-700 list-disc list-inside">
+          <li>Enhanced embedding pipeline consistency and added Hugging Face model support for safer LLM interactions. :contentReference[oaicite:6]{index=6}</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="flex items-start justify-between">
+          <div>
+            <div class="font-semibold">EXTION</div>
+            <div class="text-sm text-gray-600">Machine Learning Intern (Feb 2025 – May 2025)</div>
+          </div>
+          <div class="text-xs text-gray-500">Uttar Pradesh, India</div>
+        </div>
+        <ul class="mt-3 text-sm text-gray-700 list-disc list-inside">
+          <li>Built an NLP sentiment pipeline for financial headlines (92%+ accuracy) and optimized GPU inference to reduce latency by 40%. :contentReference[oaicite:7]{index=7}</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="flex items-start justify-between">
+          <div>
+            <div class="font-semibold">CodSoft</div>
+            <div class="text-sm text-gray-600">Software Dev Intern (Aug 2025 – Sep 2025)</div>
+          </div>
+          <div class="text-xs text-gray-500">Remote</div>
+        </div>
+        <ul class="mt-3 text-sm text-gray-700 list-disc list-inside">
+          <li>Built Java applications (ATM interface, student management) focusing on modular design and OOP principles. :contentReference[oaicite:8]{index=8}</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS & ACHIEVEMENTS -->
+  <section id="skills" class="bg-white border-t border-b border-gray-100">
+    <div class="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-8">
+      <div>
+        <h3 class="text-xl font-semibold">Technical Skills</h3>
+        <div class="mt-4 grid grid-cols-2 gap-4 text-sm text-gray-700">
+          <div>
+            <strong>Languages</strong><div>Python, SQL, Java</div>
+          </div>
+          <div>
+            <strong>AI / ML</strong><div>Deep Learning, NLP, LLMs, RAG, Time-Series</div>
+          </div>
+          <div>
+            <strong>Libraries</strong><div>PyTorch, TensorFlow, Scikit-learn, FAISS</div>
+          </div>
+          <div>
+            <strong>Deployment</strong><div>Docker, GitHub Actions, Hugging Face Spaces, AWS</div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-semibold">Achievements</h3>
+        <ul class="mt-4 text-sm text-gray-700 list-disc list-inside">
+          <li>Kaggle: 3× Bronze Medals (NLP chatbot, E-Retail segmentation, CNN). :contentReference[oaicite:9]{index=9}</li>
+          <li>LeetCode: 1400+; Codeforces: 1800; CodeChef: 1700.</li>
+          <li>Completed BCG X Data Science Virtual Experience Program; Organizer at Khanan’22, IIT Dhanbad.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
   <section id="contact" class="max-w-6xl mx-auto px-6 py-16">
-    <h2 class="text-2xl font-semibold">Contact</h2>
-    <div class="mt-4 text-slate-700">
-      Email: kumarsharmarahul01@gmail.com • Phone: +91 9508476508
+    <div class="grid md:grid-cols-2 gap-8">
+      <div>
+        <h2 class="text-2xl font-semibold">Contact</h2>
+        <p class="mt-4 text-gray-700">Interested in collaborating or hiring? Send a message or email me directly:</p>
+        <div class="mt-4 text-sm text-gray-700">
+          <div><strong>Email:</strong> kumarsharmarahul01@gmail.com</div>
+          <div><strong>Phone:</strong> +91 9508476508</div>
+          <div class="mt-3"><a href="https://github.com/Rahul29999" class="text-indigo-600">GitHub</a> • <a href="https://linkedin.com/in/rahul-kumar-sharma-aa0b57233" class="text-indigo-600">LinkedIn</a></div>
+        </div>
+      </div>
+
+      <div>
+        <form class="bg-gray-50 p-6 rounded-lg border">
+          <label class="text-sm font-medium">Your Name</label>
+          <input class="mt-1 w-full rounded-md p-2 border" placeholder="Your name" />
+          <label class="text-sm font-medium mt-4">Email</label>
+          <input class="mt-1 w-full rounded-md p-2 border" placeholder="you@example.com" />
+          <label class="text-sm font-medium mt-4">Message</label>
+          <textarea class="mt-1 w-full rounded-md p-2 border" rows="4" placeholder="Hi Rahul, ..."></textarea>
+          <div class="mt-4">
+            <button type="button" onclick="alert('Please email at kumarsharmarahul01@gmail.com')" class="px-4 py-2 bg-indigo-600 text-white rounded-md">Send Message</button>
+          </div>
+        </form>
+      </div>
     </div>
   </section>
 
-  <footer class="text-center py-8 text-sm text-slate-500">© <span id="year"></span> Rahul Kumar Sharma</footer>
+  <footer class="text-center py-8 text-sm text-gray-500">© <span id="year"></span> Rahul Kumar Sharma — IIT (ISM) Dhanbad</footer>
 
   <script>
-    // particles
-    tsParticles.load("tsparticles", {
-      fpsLimit: 60,
-      interactivity: { detectsOn: "canvas", events: { onHover: { enable: false }, resize: true }},
-      particles: {
-        color: { value: ["#7c3aed", "#06b6d4"] },
-        move: { enable: true, speed: 0.6, outModes: "out" },
-        number: { value: 28, density: { enable: true, area: 800 } },
-        opacity: { value: 0.15 },
-        shape: { type: "circle" },
-        size: { value: { min: 1, max: 6 } },
-        links: { enable: true, distance: 130, opacity: 0.06 }
-      },
-      detectRetina: true
-    });
-
-    // theme toggle
-    const themeToggle = document.getElementById('themeToggle');
-    themeToggle.addEventListener('click', () => {
-      document.documentElement.classList.toggle('dark');
-      if(document.documentElement.classList.contains('dark')){
-        document.body.classList.add('bg-slate-900','text-white');
-        themeToggle.textContent = '☀️';
-      } else {
-        document.body.classList.remove('bg-slate-900','text-white');
-        themeToggle.textContent = '🌙';
-      }
-    });
-
+    // current year
     document.getElementById('year').innerText = new Date().getFullYear();
   </script>
 </body>
 </html>
+
