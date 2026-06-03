@@ -125,169 +125,184 @@
   </main>
 
   <!-- ABOUT -->
-  <section id="about" class="bg-white border-t border-b border-gray-100">
-    <div class="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-3 gap-8 items-start">
-      <div class="md:col-span-2">
-        <h2 class="text-2xl font-semibold">About</h2>
-        <p class="mt-4 text-slate-700 leading-relaxed">
-          I am an AI/ML Engineer building semantic search, RAG systems, and applied ML solutions. My work spans
-          building multilingual chatbots, RAG-based document Q&A, LLM evaluation & prompt engineering, and
-          time-series research for mining safety. I focus on converting prototypes into reliable production services.
-          (Full resume available via the button above.)
-        </p>
 
-        <h3 class="mt-6 text-lg font-medium">Selected Projects</h3>
-        <div class="mt-4 grid md:grid-cols-2 gap-4">
-          <!-- Bhagavad Gita -->
-          <div class="glass p-4">
-            <h4 class="font-semibold">Bhagavad Gita — Multilingual Chatbot</h4>
-            <p class="text-sm text-slate-600 mt-1">
-              Built a multilingual chatbot using Sentence-BERT + FAISS indexing over 700+ verses in Sanskrit, Hindi and English.
-              Implemented text normalization, multilingual embeddings and a Gradio-based UI. Deployed on Hugging Face Spaces.
-            </p>
-            <div class="mt-3 text-xs">
-              <a href="https://github.com/Rahul29999/bhagavad-gita-chatbot" class="text-indigo-600">GitHub →</a>
-              <span class="ml-3">•</span>
-              <a href="Rahul_Kumar_Sharma_AI_ML_Engineer_Resume.pdf.pdf" class="ml-3 text-indigo-600">Resume reference</a>
-            </div>
-          </div>
+<section id="about" class="bg-white border-t border-b border-gray-100">
+  <div class="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-3 gap-8 items-start">
 
-          <!-- GenAI PDF -->
-          <div class="glass p-4">
-            <h4 class="font-semibold">Smart GenAI PDF Chatbot (RAG)</h4>
-            <p class="text-sm text-slate-600 mt-1">
-              PDF-aware retrieval augmentation using FAISS + Sentence-Transformers. Implements chunking, rank-fusion and GPT-3.5
-              fallback for low-confidence answers. Suitable for legal and educational document Q&A.
-            </p>
-            <div class="mt-3 text-xs">
-              <a href="https://github.com/Rahul29999/pdf-rag-chatbot" class="text-indigo-600">GitHub →</a>
-              <span class="ml-3">•</span>
-              <a href="Rahul_Kumar_Sharma_AI_ML_Engineer_Resume.pdf.pdf" class="ml-3 text-indigo-600">Resume</a>
-            </div>
-          </div>
+```
+<div class="md:col-span-2">
 
-          <!-- Research: Longwall -->
-          <div class="glass p-4">
-            <h4 class="font-semibold">Longwall Periodic Weighting Prediction (Research)</h4>
-            <p class="text-sm text-slate-600 mt-1">
-              Applied time-series analysis and ML to shield pressure records for longwall mines. Key outcomes:
-              <ul class="text-sm text-slate-700 list-disc list-inside mt-2">
-                <li>Identified and labeled 20+ periodic weighting events from continuous shield-pressure signals.</li>
-                <li>Detected a major local fall (54 m) using clustering & change-point detection.</li>
-                <li>Developed early-warning models for local fall intervals and periodic weighting occurrences to assist operational safety.</li>
-              </ul>
-            </p>
-            <div class="mt-3 text-xs">
-              <a href="https://github.com/Rahul29999/longwall-research" class="text-indigo-600">Project repo →</a>
-              <span class="ml-3">•</span>
-              <a href="Rahul_Kumar_Sharma_AI_ML_Engineer_Resume.pdf.pdf" class="ml-3 text-indigo-600">Resume</a>
-            </div>
-          </div>
+  <h2 class="text-2xl font-semibold">About</h2>
 
-          <!-- NTT Forecast -->
-          <div class="glass p-4">
-            <h4 class="font-semibold">NTT Stock Price Forecasting</h4>
-            <p class="text-sm text-slate-600 mt-1">
-              Hybrid ML + LSTM forecasting pipeline with data preprocessing, feature engineering and model ensembling. Evaluated using R² and RMSE metrics.
-            </p>
-            <div class="mt-3 text-xs">
-              <a href="https://github.com/Rahul29999/ntt-forecast" class="text-indigo-600">GitHub →</a>
-              <span class="ml-3">•</span>
-              <a href="Rahul_Kumar_Sharma_AI_ML_Engineer_Resume.pdf.pdf" class="ml-3 text-indigo-600">Resume</a>
-            </div>
-          </div>
-        </div>
-      </div>
+  <p class="mt-4 text-slate-700 leading-relaxed">
+    Machine Learning Engineer with experience in Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), Natural Language Processing (NLP), Semantic Search, Deep Learning, and Time-Series Forecasting. Experienced in building production-grade AI systems, evaluating and improving LLM performance, designing intelligent retrieval pipelines, and developing scalable machine learning solutions.
 
-      <aside class="glass p-6">
-        <h4 class="font-medium">Education</h4>
-        <div class="mt-3 text-sm text-slate-700">
-          <div><strong>IIT (ISM) Dhanbad</strong></div>
-          <div>B.Tech — Mining Engineering (2021 – 2025)</div>
-        </div>
+    Worked on large-scale LLM evaluation projects, financial sentiment analysis systems, multilingual AI chatbots, document intelligence platforms, and predictive analytics solutions. Passionate about leveraging Generative AI, automation, and machine learning to solve real-world problems and deliver measurable business impact.
+  </p>
 
-        <h4 class="mt-6 font-medium">Tools & Libraries</h4>
-        <ul class="mt-2 text-sm text-slate-700 space-y-1">
-          <li>PyTorch • TensorFlow • Scikit-learn • Hugging Face • FAISS</li>
-          <li>Sentence-Transformers • Pandas • NumPy • Docker • Git</li>
-          <li>Gradio • Streamlit • AWS (Basic)</li>
-        </ul>
-      </aside>
-    </div>
-  </section>
+  <h3 class="mt-6 text-lg font-medium">Featured Projects</h3>
 
-  <!-- RESEARCH (detailed) -->
-  <section id="research" class="max-w-6xl mx-auto px-6 py-16">
-    <h2 class="text-2xl font-semibold">Research & Mining Safety</h2>
-    <div class="mt-6 glass p-6">
-      <p class="text-slate-700">
-        My mining research focused on time-series analysis of shield pressure for longwall operations. The project combined signal processing,
-        clustering and supervised ML to: (1) detect periodic weighting cycles, (2) forecast local fall intervals, and (3) produce interpretable alerts
-        for mine operators. This work produced labeled datasets, event detection algorithms and early-warning heuristics that improved actionable
-        lead-time for local fall mitigation. (See repo & resume for datasets and code.)
+  <div class="mt-4 grid md:grid-cols-2 gap-4">
+
+    <!-- Smart GenAI PDF Chatbot -->
+    <div class="glass p-4">
+      <h4 class="font-semibold">Smart GenAI PDF Chatbot | RAG, FastAPI, LangChain, FAISS, Docker</h4>
+
+      <p class="text-sm text-slate-600 mt-2">
+        Production-grade Retrieval-Augmented Generation (RAG) system for intelligent document question answering.
       </p>
+
+      <ul class="text-sm text-slate-700 list-disc list-inside mt-2">
+        <li>Extracted and processed multi-page PDF documents using pdfplumber and semantic chunking techniques.</li>
+        <li>Generated dense vector embeddings using all-MiniLM-L6-v2 and indexed documents using FAISS.</li>
+        <li>Implemented confidence-based query routing with GPT fallback for enhanced response accuracy.</li>
+        <li>Built FastAPI endpoints for upload, querying, monitoring, analytics, and health checks.</li>
+        <li>Containerized and deployed the complete solution using Docker.</li>
+      </ul>
     </div>
-  </section>
 
-  <!-- EXPERIENCE -->
-  <section id="experience" class="bg-white border-t border-b border-gray-100">
-    <div class="max-w-6xl mx-auto px-6 py-16">
-      <h2 class="text-2xl font-semibold">Experience</h2>
-      <div class="mt-6 grid gap-6">
-        <!-- Outlier AI -->
-        <div class="glass p-4">
-          <div class="flex items-start justify-between">
-            <div>
-              <div class="font-semibold">Outlier AI (USA)</div>
-              <div class="text-sm text-slate-600">Machine learning engineer (Nov 2024 – Nov 2025)</div>
+    <!-- Bhagavad Gita NLP Chatbot -->
+    <div class="glass p-4">
+      <h4 class="font-semibold">Bhagavad Gita NLP Chatbot | Semantic Search, FAISS, Gradio</h4>
+
+      <p class="text-sm text-slate-600 mt-2">
+        Multilingual AI chatbot supporting Sanskrit, Hindi, and English using semantic search.
+      </p>
+
+      <ul class="text-sm text-slate-700 list-disc list-inside mt-2">
+        <li>Indexed and searched across 700+ Bhagavad Gita verses using FAISS.</li>
+        <li>Implemented Sentence-BERT embeddings for concept-based semantic retrieval.</li>
+        <li>Built multilingual support across Sanskrit, Hindi, and English.</li>
+        <li>Deployed publicly on Hugging Face Spaces using Gradio.</li>
+        <li>Achieved 90%+ answer relevance on philosophical Q&A benchmarks.</li>
+      </ul>
+    </div>
+
+    <!-- NTT Stock Price Prediction -->
+    <div class="glass p-4">
+      <h4 class="font-semibold">NTT Stock Price Prediction | Machine Learning, LSTM, Time-Series Forecasting</h4>
+
+      <p class="text-sm text-slate-600 mt-2">
+        End-to-end stock forecasting solution using machine learning and deep learning models.
+      </p>
+
+      <ul class="text-sm text-slate-700 list-disc list-inside mt-2">
+        <li>Performed extensive data preprocessing and feature engineering.</li>
+        <li>Trained and evaluated 8+ machine learning models including Random Forest and CatBoost.</li>
+        <li>Achieved up to 95.46% R² score.</li>
+        <li>Developed LSTM forecasting models using TensorFlow.</li>
+        <li>Generated 30-day future stock trend predictions with low forecasting error.</li>
+      </ul>
+    </div>
+
+    <!-- Financial Sentiment Analysis -->
+    <div class="glass p-4">
+      <h4 class="font-semibold">Financial News Sentiment Analysis | NLP, Transformers, PyTorch</h4>
+
+      <p class="text-sm text-slate-600 mt-2">
+        Production-ready NLP pipeline for sentiment classification of financial news headlines.
+      </p>
+
+      <ul class="text-sm text-slate-700 list-disc list-inside mt-2">
+        <li>Built using NLTK, VADER, Hugging Face Transformers, and PyTorch.</li>
+        <li>Achieved 92%+ sentiment classification accuracy.</li>
+        <li>Implemented advanced text preprocessing and feature engineering techniques.</li>
+        <li>Created analytics dashboards using Matplotlib and Seaborn.</li>
+        <li>Reduced inference latency by 40% through CUDA and cuDNN optimization.</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+<aside class="glass p-6">
+
+  <h4 class="font-medium">Education</h4>
+
+  <div class="mt-3 text-sm text-slate-700">
+    <div><strong>Indian Institute of Technology (ISM) Dhanbad</strong></div>
+    <div>Bachelor of Technology – Mining Engineering</div>
+    <div>2021 – 2025</div>
+  </div>
+
+  <h4 class="mt-6 font-medium">Technical Skills</h4>
+
+  <ul class="mt-2 text-sm text-slate-700 space-y-1">
+    <li><strong>Languages:</strong> Python, SQL</li>
+    <li><strong>AI/ML:</strong> Machine Learning, Deep Learning, NLP, LLMs, Prompt Engineering, RAG, Semantic Search</li>
+    <li><strong>Frameworks:</strong> PyTorch, TensorFlow, Keras, Scikit-learn, LangChain, FastAPI</li>
+    <li><strong>Vector Search:</strong> FAISS, Sentence-Transformers, SBERT</li>
+    <li><strong>Analytics:</strong> Pandas, NumPy, Matplotlib, Seaborn, Power BI</li>
+    <li><strong>Deployment:</strong> Docker, GitHub Actions, Hugging Face Spaces, AWS, Azure App Service</li>
+  </ul>
+
+</aside>
+```
+
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="bg-white border-t border-b border-gray-100">
+  <div class="max-w-6xl mx-auto px-6 py-16">
+    <h2 class="text-2xl font-semibold">Experience</h2>
+
+    <div class="mt-6 grid gap-6">
+
+      <!-- Outlier AI -->
+      <div class="glass p-4">
+        <div class="flex items-start justify-between">
+          <div>
+            <div class="font-semibold">Outlier AI</div>
+            <div class="text-sm text-slate-600">
+              Machine Learning Engineer – Freelance (Nov 2024 – Nov 2025)
             </div>
-            <div class="text-xs text-slate-500">Remote</div>
           </div>
-          <ul class="mt-3 text-sm text-slate-700 list-disc list-inside">
-            <li> Worked on Python, SQL, and Artificial Intelligence-based tasks including data cleaning, query optimization, code
-debugging, and logical corrections. Reviewed and improved LLM-generated code by identifying errors and applying strong
-analytical and ML-driven problem-solving techniques.</li>
-<li>• Evaluated and enhanced LLM performance by ranking responses, analyzing reasoning steps, and creating high-quality
-feedback and labels. Contributed to fine-tuning workflows through structured evaluation, error-pattern analysis, and
-Python-based automation, improving model accuracy, consistency, and reliability.</li>
-          </ul>
+          <div class="text-xs text-slate-500">Remote</div>
         </div>
 
-        <!-- IBM -->
-        <div class="glass p-4">
-          <div class="flex items-start justify-between">
-            <div>
-              <div class="font-semibold">IBM</div>
-              <div class="text-sm text-slate-600">Open Source Contributor — Responsible Prompting (Jul 2025 – Aug 2025)</div>
-            </div>
-            <div class="text-xs text-slate-500">Remote</div>
-          </div>
-          <ul class="mt-3 text-sm text-slate-700 list-disc list-inside">
-            <li>Contributed to the Responsible Prompting API, enhancing embedding pipeline consistency and adding support
-for Hugging Face models, enabling safer, reliable LLM interactions.</li>
-<li>• Improved repository maintainability by standardizing embedding filenames, resolving bugs, and refining
-documentation, boosting cross-platform compatibility and alignment with responsible AI practices.
-</li>
-          </ul>
-        </div>
+        <ul class="mt-3 text-sm text-slate-700 list-disc list-inside">
+          <li>Worked on large-scale LLM evaluation and improvement projects, focusing on reasoning quality, correctness, and robustness.</li>
 
-        <!-- EXTION -->
-        <div class="glass p-4">
-          <div class="flex items-start justify-between">
-            <div>
-              <div class="font-semibold">EXTION</div>
-              <div class="text-sm text-slate-600">Machine Learning Intern (Feb 2025 – May 2025)</div>
-            </div>
-            <div class="text-xs text-slate-500">Uttar Pradesh, India</div>
-          </div>
-          <ul class="mt-3 text-sm text-slate-700 list-disc list-inside">
-            <li>Built an NLP sentiment pipeline for financial headlines (92% accuracy) and optimized GPU inference to reduce latency by 40%.</li>
-          </ul>
-        </div>
+          <li>Designed and executed structured evaluation pipelines to assess LLM outputs, including response ranking, chain-of-thought analysis, and failure-mode identification.</li>
 
-        <!-- (Removed CodSoft rating as requested) -->
+          <li>Reviewed and debugged LLM-generated Python code, identifying logical, syntactic, and performance issues to improve reliability.</li>
+
+          <li>Built automation scripts using Python, Pandas, NumPy, and SQL to analyze model behavior, error patterns, and labeling inconsistencies at scale.</li>
+
+          <li>Generated high-quality training signals and feedback used in model fine-tuning workflows, contributing to improved accuracy and reasoning performance.</li>
+
+          <li>Collaborated with distributed teams and delivered technical feedback aligned with real-world machine learning engineering scenarios.</li>
+        </ul>
       </div>
+
+      <!-- EXTION -->
+      <div class="glass p-4">
+        <div class="flex items-start justify-between">
+          <div>
+            <div class="font-semibold">EXTION</div>
+            <div class="text-sm text-slate-600">
+              Machine Learning Intern (Feb 2025 – May 2025)
+            </div>
+          </div>
+          <div class="text-xs text-slate-500">Remote – Uttar Pradesh, India</div>
+        </div>
+
+        <ul class="mt-3 text-sm text-slate-700 list-disc list-inside">
+          <li>Designed and implemented a production-ready NLP pipeline using NLTK, VADER, Hugging Face Transformers, and PyTorch.</li>
+
+          <li>Achieved 92%+ sentiment classification accuracy on financial news headlines.</li>
+
+          <li>Performed extensive text preprocessing, tokenization, stopword removal, and lemmatization to improve model robustness.</li>
+
+          <li>Built visual analytics dashboards using Matplotlib and Seaborn to analyze market sentiment trends.</li>
+
+          <li>Optimized GPU-accelerated inference pipelines using CUDA and cuDNN, reducing end-to-end latency by 40%.</li>
+        </ul>
+      </div>
+
     </div>
+  </div>
   </section>
 
   <!-- SKILLS & ACHIEVEMENTS -->
@@ -311,7 +326,7 @@ documentation, boosting cross-platform compatibility and alignment with responsi
         <ul class="mt-4 text-sm text-slate-700 list-disc list-inside">
           <li>Kaggle: 3× Bronze Medals</li>
           <li>HackerRank: Python (5★), SQL (5★)</li>
-          <li>LeetCode: 1400+ • Codeforces: 1800</li>
+          <li>LeetCode: 1400+ </li>
         </ul>
       </div>
     </div>
